@@ -1,1 +1,39 @@
 Hello this is an changed in new branch
+
+One time only 
+- create git user.name and user.email
+    git config --global user.name "Ankitrawat2004"
+    git config --global user.email "Ankitrawat2004@gmail.com"
+
+- initialize folder (allow folder to be tracked)
+    git init
+
+- save files
+    git add . or git add filename1 filename2 ...etc
+    git commit -m "message here"
+
+- unstage files or unadd files
+    git restore . or git restore filename1 filename2 ...etc
+
+- undo commit or remove changes upto given commit
+    git reset --soft COMMIT_HASH (this will remove commits but will keep files tracked)
+    git reset --hard COMMIT_HASH (this will remove everything upto the commit and will also not track files)
+
+- log
+    git log (press Q to quit)
+
+- remote repo link (github repo)
+    git remote add origin GITHUB_URL
+
+- push to github
+    git push -u origin master (first time only) else use git push
+
+- pull from github
+    git pull
+    git fetch (sync local and remote/github changes)
+
+- branches
+    git branch (list all branches)
+    git checkout new-branch
+    git checkout -b new-branch (create new if doesn't exist)
+    git branch -d new-branch
